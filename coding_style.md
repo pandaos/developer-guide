@@ -87,3 +87,15 @@ char *blockOfMemory = reinterpret_cast<char *>(malloc(data.size()));
  } else {
  }
 ```
+
+## Qt Includes
+
+If you add #includes for Qt classes, use only the class name.
+
+```c++
+// wrong
+#include <QtCore/QString>
+
+// correct
+#include <QString>
+```
